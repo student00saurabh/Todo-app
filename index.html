@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+	<title>Todo App</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="box1">
+			<h1>Welcome In Todo App!</h1>
+			<p>In tris application you can add your daily tasks, <br>
+			And Also you can make your time table,</p><br>
+			<button class="box1-next">Next</button>
+			<div class="loader"></div>
+		</div>
+	</div>
+
+	<div class="main-box">
+		<div class="box2">
+			<h1 class="first">Todo App</h1>
+			<div class="box3">
+
+				<div class="content1">
+					<h3>Daily tasks</h3><hr><br>
+
+					<div class="box4">
+					     <input type="time" id="input1" class="inp-s" placeholder="00:00">
+						<input type="text" id="input2" class="inp-s" placeholder="enter your task">
+						<input type="number" id="input3" class="inp-s" placeholder="00" min="0" max="24">
+	                    <button class="addtsk">Add Task</button><br><br>
+	                    <table>
+							<thead >
+							    <tr class="table-row">
+									<th class="t-heading">Delete</th>
+								   <th class="t-heading">Time</th>
+								   <th class="t-heading">Task Name</th>
+								   <th class="t-heading">Hours</th>
+							    </tr>
+							</thead>
+							<tbody>
+								<tr class="table-row">
+									<td class="delete"><i class="fa-solid fa-trash"></i></td>
+								   <td>02:00</td>
+								   <td>Sleep</td>
+								   <td>2</td>
+							    </tr>
+								<tr class="table-row">
+									<td class="delete"><i class="fa-solid fa-trash"></i></td>
+								   <td>03:00</td>
+								   <td>Read</td>
+								   <td>3</td>
+							    </tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
